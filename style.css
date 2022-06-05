@@ -5,7 +5,7 @@
   text-align: center;
 }
 body{
-  margin: 0;
+  margin: 0;  
   padding: 0;
   box-sizing: border-box;
 }
@@ -17,4 +17,15 @@ body{
 }
 .main-heading{
   color:rgb(22, 22, 22)
+}
+.notifier{
+  text-align: center;
+  border:none;
+  background-color: #8BC6EC;
+  width:250px;
+  height:50px;
+  border-radius:20px;
+}
+.notifier:hover{
+  background-color: #5b9bc5;
 }
