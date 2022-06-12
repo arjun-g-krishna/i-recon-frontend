@@ -35,7 +35,10 @@ onValue(countRef, (snapshot) => {
     var timeBuffer = new Date(buffer[key]['time']*1000)
     his.innerText += "● "+buffer[key]['BlinkCount']+" blinks on "+timeBuffer.toString()+'\n\n'
   }
-  var notification = new Notification("Alert! Please attend to your patient");
+  var notification = new Notification("Alert! Your patient needs assistance",{
+    body: "Please attend to your patient.",
+    icon: "/favicon.ico"
+  });
 });
 function notifyMe() {
   // Let's check if the browser supports notifications
