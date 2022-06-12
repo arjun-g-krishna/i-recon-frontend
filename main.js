@@ -32,9 +32,8 @@ onValue(countRef, (snapshot) => {
   buffer = data;
   his.innerText = ' '
   for(var key in buffer){
-    var milliseconds = buffer[key]['time']
-    var timeBuffer = new Date(milliseconds*1000)
-    his.innerText += "Blinks: "+buffer[key]['BlinkCount']+" Time: "+timeBuffer.toString()+'\n'
+    var timeBuffer = new Date(buffer[key]['time']*1000)
+    his.innerText += "● "+buffer[key]['BlinkCount']+" blinks on "+timeBuffer.toString()+'\n\n'
   }
   var notification = new Notification("Alert! Please attend to your patient");
 });
