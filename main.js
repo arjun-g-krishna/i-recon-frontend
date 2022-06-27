@@ -3,22 +3,20 @@ import { initializeApp } from "firebase/app";
 import { getDatabase, ref, onValue } from "firebase/database";
 document.getElementById('notifier').onclick = function(){notifyMe()};
 const his = document.getElementById('history');
-var buffer= [] ;
+var buffer= [];
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBySS6X2hEKHVAhZD3OSpf9UClbBixM1lk",
-  authDomain: "i-recon.firebaseapp.com",
-  databaseURL: "https://i-recon-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "i-recon",
-  storageBucket: "i-recon.appspot.com",
-  messagingSenderId: "735653036738",
-  appId: "1:735653036738:web:7dd592393321d0abc7b15b",
-  measurementId: "G-LD1VX4L4W7"
+  apiKey: "AIzaSyBBKlOBRmZhdnHCixssCKHaSsWFDaid1TI",
+  authDomain: "irecon-notify.firebaseapp.com",
+  databaseURL: "https://irecon-notify-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "irecon-notify",
+  storageBucket: "irecon-notify.appspot.com",
+  messagingSenderId: "745444359594",
+  appId: "1:745444359594:web:490c55a651c842dd01bfd3"
 };
 
 // Initialize Firebase
